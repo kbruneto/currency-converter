@@ -6,7 +6,7 @@ let bitcoinHoje = 213136.49
 
 const botaoDeConversao = document.querySelector(".convert-button");    //Botão para converter
 
-const imagem1 = document.querySelector(".currency-img1");    //imagem da moeda  1
+const imagem1 = document.querySelector("#currency-img1");    //imagem da moeda  1
 const imagem2 = document.querySelector(".currency-img2");    //imagem da moeda  2
 
 const textoMoedasAConverter = document.querySelector(".currency-value-to-convert") // Valor em real
