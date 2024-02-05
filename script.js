@@ -227,40 +227,42 @@ botaoDeConversao.addEventListener("click", convertValue);
 
 
 
-function atualizarIMG1(){
+function atualizarIMG1() {
 
     if (primeiraMoeda.value == "euro") {
         textoPrimeiraMoeda.innerHTML = ("Euro")
-        imagem1.style.src = "./assets/euro.png"
+        imagem1.src = "./assets/euro.png"
         textoMoedasAConverter.innerHTML = ("€ 0.0")
     }
     if (primeiraMoeda.value == "dolar") {
-        textoPrimeiraMoeda.innerHTML = ("Dolar")
+        textoPrimeiraMoeda.innerHTML = ("dolar")
         imagem1.src = "./assets/dolar.png"
         textoMoedasAConverter.innerHTML = ("US$ 0.0")
 
 
     }
-    if (primeiraMoeda.value == "libra") {
-        textoPrimeiraMoeda.innerHTML = ("Libra")
-        imagem1.src = "./assets/libra.png"
+    if (segundaMoeda.value == "libra") {
+        textoSegundaMoeda.innerHTML = ("Libra")
+        imagem2.src = "./assets/libra.png"
         textoMoedasAConverter.innerHTML = ("£ 0.0")
 
 
-    } else if (primeiraMoeda.value == "bitcoin") {
-        textoPrimeiraMoeda.innerHTML = ("Bitcoin")
-        imagem1.src = "./assets/bitcoin.png"
+    } else if (segundaMoeda.value == "bitcoin") {
+        textoSegundaMoeda.innerHTML = ("Bitcoin")
+        imagem2.src = "./assets/bitcoin.png"
         textoMoedasAConverter.innerHTML = ("BTC 0.0")
-
-    } else if (primeiraMoeda.value == "real") {
-        textoPrimeiraMoeda.innerHTML = ("Real")
-        imagem1.src = "./assets/real.png"
+    } else if (segundaMoeda.value == "real") {
+        textoSegundaMoeda.innerHTML = ("Real")
+        imagem2.src = "./assets/real.png"
         textoMoedasAConverter.innerHTML = ("R$ 00,00")
     }
+
+
 }
 
 
 function atualizarIMG2() {
+    
     if (segundaMoeda.value == "euro") {
         textoSegundaMoeda.innerHTML = ("Euro")
         imagem2.src = "./assets/euro.png"
@@ -292,33 +294,9 @@ function atualizarIMG2() {
 
 }
 
-function tradeImage(){
-    if (primeiraMoeda.value == "real"){
-        imagem1.src = "./assets/real.png"
-    }
-
-    if (primeiraMoeda.value == "dolar"){
-        imagem1.src = "./assets/dolar.png"
-    }
-
-    if (primeiraMoeda.value == "euro"){
-        imagem1.src = "./assets/euro.png"
-    }
-
-    if (primeiraMoeda.value == "libra"){
-        imagem1.src = "./assets/libra.png"
-    }
-
-    if (primeiraMoeda.value == "bitcoin"){
-        imagem1.src = "./assets/bitcoin.png"
-    }
-}
-
 primeiraMoeda.addEventListener("change", atualizarIMG1) //toda vez que eu trocar de moeda atualiza as imagens
 
 segundaMoeda.addEventListener("change", atualizarIMG2) //toda vez que eu trocar de moeda atualiza as imagens
-
-primeiraMoeda.addEventListener("change", tradeImage)
 
 window.addEventListener("load", function () {
     alert("Os valores das moedas são com base no dia 05/02/2024 às 19:15! Grato pelo entendimento, em breve APIs serão adicionadas ao projeto para a cotação em tempo real!");
