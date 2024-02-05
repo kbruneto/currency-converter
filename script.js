@@ -292,9 +292,33 @@ function atualizarIMG2() {
 
 }
 
-primeiraMoeda.addEventListener("change", atualizarIMG1); //toda vez que eu trocar de moeda atualiza as imagens
+function tradeImage(){
+    if (primeiraMoeda.value == "real"){
+        imagem1.src = "./assets/real.png"
+    }
 
-segundaMoeda.addEventListener("change", atualizarIMG2); //toda vez que eu trocar de moeda atualiza as imagens
+    if (primeiraMoeda.value == "dolar"){
+        imagem1.src = "./assets/dolar.png"
+    }
+
+    if (primeiraMoeda.value == "euro"){
+        imagem1.src = "./assets/euro.png"
+    }
+
+    if (primeiraMoeda.value == "libra"){
+        imagem1.src = "./assets/libra.png"
+    }
+
+    if (primeiraMoeda.value == "bitcoin"){
+        imagem1.src = "./assets/bitcoin.png"
+    }
+}
+
+primeiraMoeda.addEventListener("change", atualizarIMG1) //toda vez que eu trocar de moeda atualiza as imagens
+
+segundaMoeda.addEventListener("change", atualizarIMG2) //toda vez que eu trocar de moeda atualiza as imagens
+
+primeiraMoeda.addEventListener("change", tradeImage)
 
 window.addEventListener("load", function () {
     alert("Os valores das moedas são com base no dia 05/02/2024 às 19:15! Grato pelo entendimento, em breve APIs serão adicionadas ao projeto para a cotação em tempo real!");
