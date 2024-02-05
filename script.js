@@ -231,7 +231,7 @@ function atualizarIMG1() {
 
     if (primeiraMoeda.value == "euro") {
         textoPrimeiraMoeda.innerHTML = ("Euro")
-        imagem1.src = "./assets/euro.png"
+        imagem1.style.src = "./assets/euro.png"
         textoMoedasAConverter.innerHTML = ("€ 0.0")
     }
     if (primeiraMoeda.value == "dolar") {
