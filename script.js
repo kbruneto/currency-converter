@@ -230,68 +230,66 @@ botaoDeConversao.addEventListener("click", convertValue);
 function atualizarIMG1() {
 
     if (primeiraMoeda.value == "euro") {
-        textoPrimeiraMoeda.innerHTML = ("€ Euro")
+        textoPrimeiraMoeda.innerHTML = ("Euro")
         imagem1.style.src = "./assets/euro.png"
         textoMoedasAConverter.innerHTML = ("€ 0.0")
     }
-
     if (primeiraMoeda.value == "dolar") {
         textoPrimeiraMoeda.innerHTML = ("Dolar")
         imagem1.style.src = "./assets/dolar.png"
         textoMoedasAConverter.innerHTML = ("US$ 0.0")
-    }
 
+
+    }
     if (primeiraMoeda.value == "libra") {
-        textoPrimeiraMoeda.innerHTML = ("£ Libra")
+        textoPrimeiraMoeda.innerHTML = ("Libra")
         imagem1.style.src = "./assets/libra.png"
         textoMoedasAConverter.innerHTML = ("£ 0.0")
-    }
-    
-    if (primeiraMoeda.value == "bitcoin") {
-        textoPrimeiraMoeda.innerHTML = ("₿ Bitcoin")
+
+
+    } else if (primeiraMoeda.value == "bitcoin") {
+        textoPrimeiraMoeda.innerHTML = ("Bitcoin")
         imagem1.style.src = "./assets/bitcoin.png"
         textoMoedasAConverter.innerHTML = ("BTC 0.0")
-    }
-    
-    if (primeiraMoeda.value == "real") {
+
+    } else if (primeiraMoeda.value == "real") {
         textoPrimeiraMoeda.innerHTML = ("R$ Real Brasileiro")
         imagem1.style.src = "./assets/real.png"
-        textoMoedasAConverter.innerHTML = ("R$ 00,00")
+        textoMoedasAConverter.innerHTML = ("BTC 0.0")
     }
 }
 
 
 function atualizarIMG2() {
     if (segundaMoeda.value == "euro") {
-        textoSegundaMoeda.innerHTML = ("€ Euro")
+        textoSegundaMoeda.innerHTML = ("Euro")
         imagem2.style.src = "./assets/euro.png"
         textoMoedasConvertidas.innerHTML = ("€ 0.0")
     }
-
     if (segundaMoeda.value == "dolar") {
         textoSegundaMoeda.innerHTML = ("U$ Dolar Americano")
         imagem2.style.src = "./assets/dolar.png"
         textoMoedasConvertidas.innerHTML = ("US$ 0.0")
-    }
 
+
+    }
     if (segundaMoeda.value == "libra") {
-        textoSegundaMoeda.innerHTML = ("£ Libra")
+        textoSegundaMoeda.innerHTML = ("Libra")
         imagem2.style.src = "./assets/libra.png"
         textoMoedasConvertidas.innerHTML = ("£ 0.0")
-    }
-    
-    if (segundaMoeda.value == "bitcoin") {
-        textoSegundaMoeda.innerHTML = ("₿ Bitcoin")
+
+
+    } else if (segundaMoeda.value == "bitcoin") {
+        textoSegundaMoeda.innerHTML = ("Bitcoin")
         imagem2.style.src = "./assets/bitcoin.png"
         textoMoedasConvertidas.innerHTML = ("BTC 0.0")
-    }
-    
-    if (segundaMoeda.value == "real") {
+    } else if (segundaMoeda.value == "real") {
         textoSegundaMoeda.innerHTML = ("R$ Real Brasileiro")
         imagem2.style.src = "./assets/real.png"
         textoMoedasConvertidas.innerHTML = ("R$ 00,00")
     }
-    
+
+
 }
 
 primeiraMoeda.addEventListener("change", atualizarIMG1); //toda vez que eu trocar de moeda atualiza as imagens
