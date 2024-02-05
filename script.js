@@ -6,7 +6,7 @@ let bitcoinHoje = 213136.49
 
 const botaoDeConversao = document.querySelector(".convert-button");    //Botão para converter
 
-const imagem1 = document.querySelector("#currency-img1");    //imagem da moeda  1
+const imagem1 = document.querySelector("currency-img1");    //imagem da moeda  1
 const imagem2 = document.querySelector(".currency-img2");    //imagem da moeda  2
 
 const textoMoedasAConverter = document.querySelector(".currency-value-to-convert") // Valor em real
@@ -231,30 +231,30 @@ function atualizarIMG1() {
 
     if (primeiraMoeda.value == "euro") {
         textoPrimeiraMoeda.innerHTML = ("Euro")
-        imagem1.style.src = "./assets/euro.png"
+        imagem1.src = "./assets/euro.png"
         textoMoedasAConverter.innerHTML = ("€ 0.0")
     }
     if (primeiraMoeda.value == "dolar") {
         textoPrimeiraMoeda.innerHTML = ("Dolar")
-        imagem1.style.src = "./assets/dolar.png"
+        imagem1.src = "./assets/dolar.png"
         textoMoedasAConverter.innerHTML = ("US$ 0.0")
 
 
     }
     if (primeiraMoeda.value == "libra") {
         textoPrimeiraMoeda.innerHTML = ("Libra")
-        imagem1.style.src = "./assets/libra.png"
+        imagem1.src = "./assets/libra.png"
         textoMoedasAConverter.innerHTML = ("£ 0.0")
 
 
     } else if (primeiraMoeda.value == "bitcoin") {
         textoPrimeiraMoeda.innerHTML = ("Bitcoin")
-        imagem1.style.src = "./assets/bitcoin.png"
+        imagem1.src = "./assets/bitcoin.png"
         textoMoedasAConverter.innerHTML = ("BTC 0.0")
 
     } else if (primeiraMoeda.value == "real") {
-        textoPrimeiraMoeda.innerHTML = ("R$ Real Brasileiro")
-        imagem1.style.src = "./assets/real.png"
+        textoPrimeiraMoeda.innerHTML = ("Real")
+        imagem1.src = "./assets/real.png"
         textoMoedasAConverter.innerHTML = ("BTC 0.0")
     }
 }
@@ -263,29 +263,29 @@ function atualizarIMG1() {
 function atualizarIMG2() {
     if (segundaMoeda.value == "euro") {
         textoSegundaMoeda.innerHTML = ("Euro")
-        imagem2.style.src = "./assets/euro.png"
+        imagem2.src = "./assets/euro.png"
         textoMoedasConvertidas.innerHTML = ("€ 0.0")
     }
     if (segundaMoeda.value == "dolar") {
-        textoSegundaMoeda.innerHTML = ("U$ Dolar Americano")
-        imagem2.style.src = "./assets/dolar.png"
+        textoSegundaMoeda.innerHTML = ("dolar")
+        imagem2.src = "./assets/dolar.png"
         textoMoedasConvertidas.innerHTML = ("US$ 0.0")
 
 
     }
     if (segundaMoeda.value == "libra") {
         textoSegundaMoeda.innerHTML = ("Libra")
-        imagem2.style.src = "./assets/libra.png"
+        imagem2.src = "./assets/libra.png"
         textoMoedasConvertidas.innerHTML = ("£ 0.0")
 
 
     } else if (segundaMoeda.value == "bitcoin") {
         textoSegundaMoeda.innerHTML = ("Bitcoin")
-        imagem2.style.src = "./assets/bitcoin.png"
+        imagem2.src = "./assets/bitcoin.png"
         textoMoedasConvertidas.innerHTML = ("BTC 0.0")
     } else if (segundaMoeda.value == "real") {
-        textoSegundaMoeda.innerHTML = ("R$ Real Brasileiro")
-        imagem2.style.src = "./assets/real.png"
+        textoSegundaMoeda.innerHTML = ("Real")
+        imagem2.src = "./assets/real.png"
         textoMoedasConvertidas.innerHTML = ("R$ 00,00")
     }
 
