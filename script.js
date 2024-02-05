@@ -255,7 +255,7 @@ function atualizarIMG1() {
     } else if (primeiraMoeda.value == "real") {
         textoPrimeiraMoeda.innerHTML = ("Real")
         imagem1.src = "./assets/real.png"
-        textoMoedasAConverter.innerHTML = ("BTC 0.0")
+        textoMoedasAConverter.innerHTML = ("R$ 00,00")
     }
 }
 
