@@ -241,19 +241,19 @@ function atualizarIMG1() {
 
 
     }
-    if (segundaMoeda.value == "libra") {
-        textoSegundaMoeda.innerHTML = ("Libra")
-        imagem2.src = "./assets/libra.png"
+    if (primeiraMoeda.value == "libra") {
+        textoPrimeiraMoeda.innerHTML = ("Libra")
+        imagem1.src = "./assets/libra.png"
         textoMoedasAConverter.innerHTML = ("£ 0.0")
 
 
-    } else if (segundaMoeda.value == "bitcoin") {
-        textoSegundaMoeda.innerHTML = ("Bitcoin")
-        imagem2.src = "./assets/bitcoin.png"
+    } else if (primeiraMoeda.value == "bitcoin") {
+        textoPrimeiraMoeda.innerHTML = ("Bitcoin")
+        imagem1.src = "./assets/bitcoin.png"
         textoMoedasAConverter.innerHTML = ("BTC 0.0")
-    } else if (segundaMoeda.value == "real") {
-        textoSegundaMoeda.innerHTML = ("Real")
-        imagem2.src = "./assets/real.png"
+    } else if (primeiraMoeda.value == "real") {
+        textoPrimeiraMoeda.innerHTML = ("Real")
+        imagem1.src = "./assets/real.png"
         textoMoedasAConverter.innerHTML = ("R$ 00,00")
     }
 
