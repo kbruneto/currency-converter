@@ -9,7 +9,7 @@ Conversão de Moedas: O principal recurso da aplicação permite ao usuário con
 
 Seleção de Moedas: Os usuários podem escolher as moedas de origem e destino a partir de uma lista abrangente de opções. Isso oferece flexibilidade na escolha das moedas a serem convertidas.
 
-**Tecnologias Utilizadas**
+**Tecnologias Utilizadas** <br>
 HTML
 CSS
 JavaScript
