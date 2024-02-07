@@ -1,10 +1,10 @@
 
 <h1>Conversor de Moedas - Projeto de Estudos</h1>
 
-**Descrição**
+**Descrição** <br>
 Este projeto é um conversor de moedas desenvolvido como parte dos meus estudos em programação. O objetivo principal é criar uma aplicação simples e funcional que permite a conversão de valores entre diferentes moedas de forma fácil e intuitiva.
 
-**Funcionalidades**
+**Funcionalidades** <br>
 Conversão de Moedas: O principal recurso da aplicação permite ao usuário converter valores de uma moeda para outra. As taxas de câmbio são obtidas em tempo real a partir de uma API externa.
 
 Seleção de Moedas: Os usuários podem escolher as moedas de origem e destino a partir de uma lista abrangente de opções. Isso oferece flexibilidade na escolha das moedas a serem convertidas.
