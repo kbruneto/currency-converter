@@ -10,9 +10,10 @@ Conversão de Moedas: O principal recurso da aplicação permite ao usuário con
 Seleção de Moedas: Os usuários podem escolher as moedas de origem e destino a partir de uma lista abrangente de opções. Isso oferece flexibilidade na escolha das moedas a serem convertidas.
 
 **Tecnologias Utilizadas** <br>
-  HTML
-  CSS
-  JavaScript
+  - HTML
+  - CSS
+  - JavaScript
+    
 
 ![image](https://github.com/kbruneto/currency-converter/assets/157076147/d6352717-15a0-488f-b5f5-2b7142d8569d)
 
