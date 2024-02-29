@@ -1,8 +1,4 @@
-let realHoje = 1
-let dolarHoje = 4.97
-let euroHoje = 5.36
-let libraHoje = 6.28
-let bitcoinHoje = 213136.49
+
 
 const botaoDeConversao = document.querySelector(".convert-button");    //Botão para converter
 
@@ -23,7 +19,15 @@ const segundaMoeda = document.querySelector(".currency-select"); //Moeda que foi
 
 
 
-function convertValue() {
+async function convertValue() {
+
+    const data = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL").then(response => response.json())
+
+    let realHoje = 1
+    let dolarHoje = data.USDBRL.high
+    let euroHoje = data.EURBRL.high
+    let libraHoje = data.GBPBRL.high
+    let bitcoinHoje = data.BTCBRL.high
 
     const intValor = document.getElementById("valor-digitado").value; //valor digitado pelo usuario
 
